@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+     <title>Signin</title>
+	 <head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <style>
+        a:link {
+           color: green;
+           }
+        a:visited {
+           color: green;
+           }
+        a:hover {
+           color: red;
+		   
+           }
+        a:active {
+           color: yellow;
+            }
+	 .center{
+	    margin: 40px 350px 75px;
+        width: 20%;
+       }
+	   .down{
+	    margin: 500px 350px 75px;
+        width: 20%;   
+	 }
+	 #myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+ #myDIV1{
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+	 </style>
+	 </head>
+	<body>
+	
+	
+		   
+         <img src="accolite1.jpg" alt="accolite logo"  style="width:200px;height:100px;border:10">
+          
+          
+          
+		  
+          <p><b>   <h2 id="acc">   ALREADY HAVE AN ACCOUNT? </h2></b></p>
+		  <button onclick="myFunction()">Click To Sign in</button>
+		  <div id="myDIV">
+		      <form >
+			   <p>User name:<br>
+            <input type="text" name="userid" id="userid1"  placeholder="User Name">
+              </p>
+            <p>User password:<br>
+            <input type="password" name="psw" id="psw1"  placeholder="User password"></p>
+			<h6><p> <a>FORGET PASSWORD?RESET</a></p></h6>
+			
+            <h4> <p>NEW USER <a href="#register" >Sign in here</a></p></h4>          
+		    <input type="submit" value="Submit" onclick="match()"> 
+		  </form>
+		  </div>
+		  
+		  
+		  
+		  <p><b><h2 id="register">  New User </h2></b></p>
+		  <button onclick="myFunction1()">Click To Register</button>
+		  <div id="myDIV1">
+		   <form>
+		    <p>First Name:<br>
+		   <input type="text" name="fname" id="fname"  placeholder="First name"></p>
+		   <p>Last Name:<br>
+          <input type="text" name="lname" id="lname"  placeholder="Last name"></p>
+          <p>Mobile Number:<br>
+          <input type="tel" name="nno" id="nno"  placeholder="Number number"></p>
+		  <p>Email:<br>
+          <input type="email" name="email" id="email" placeholder="Email"></p>
+		  <p>Date of Birth:<br>
+          <input type="date" name="dob" id="dob"  placeholder="DOB"></p>
+           <p>User name:<br>
+            <input type="text" name="userid" id="userid" placeholder="User Name">
+              </p>
+            <p>User password:<br>
+            <input type="password" name="psw" id="psw"  placeholder="User password"></p>
+			<input type="submit" value="Submit" onclick="store()"> 
+			<h4> <p>Old USER <a href="#acc" >Account login</a></p></h4> 
+            
+			
+            </form>
+			</div>
+            
+        <script  type="text/javascript">
+		function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+	function myFunction1() {
+  var x = document.getElementById("myDIV1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+  function store(){
+     var inputfname= document.getElementById("fname");
+     localStorage.setItem("fname", inputfname.value);
+	 var inputlname= document.getElementById("lname");
+     localStorage.setItem("lname", inputlname.value);
+	 var inputnno= document.getElementById("nno");
+     localStorage.setItem("nno", inputnno.value);
+	 var inputEmail= document.getElementById("email");
+     localStorage.setItem("email", inputEmail.value);
+     var inputdob= document.getElementById("dob");
+     localStorage.setItem("dob", inputdob.value);
+	 var inputuserid= document.getElementById("userid");
+     localStorage.setItem("userid", inputuserid.value);
+	 var inputpsw= document.getElementById("psw");
+     localStorage.setItem("psw", inputpsw.value);}
+	 
+	function match() {
+				var gname = localStorage.getItem('userid');
+				var gpassword = localStorage.getItem('psw');
+				var uname = document.getElementById('userid1').value;
+				var uword = document.getElementById('psw1').value;
+	             console.log(gname,gpassword,uname,uword);
+				if(gname == uname && gpassword == uword) {
+	
+					alert('Welcome to Accolite!');
+				}else {
+					alert('UserName/Password Not Match!');
+				}
+				}
+</script>
+    </body>
+</html>
