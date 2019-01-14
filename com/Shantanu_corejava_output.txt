@@ -1,0 +1,5 @@
+Average Salary of Company: 5000.0
+Average Salary of Company: 7500.0
+Manager New Department: Sale
+Average Salary of Company: 7666.0
+Skill Sets are: TATANokia

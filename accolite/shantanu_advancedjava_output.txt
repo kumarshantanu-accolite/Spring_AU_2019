@@ -1,0 +1,99 @@
+Company Accolite age below 30
+Name Kumar
+Name Shantanu
+Name Deepak
+Company Accolite sort by id
+ID 1 Name Kumar Age 21
+ID 2 Name Shantanu Age 23
+ID 4 Name Deepak Age 27
+ID 5 Name Naman Age 31
+Company Accolite sort by name
+ID 4 Name Deepak Age 27
+ID 1 Name Kumar Age 21
+ID 5 Name Naman Age 31
+ID 2 Name Shantanu Age 23
+Company Accolite sort by Age
+ID 1 Name Kumar Age 21
+ID 2 Name Shantanu Age 23
+ID 4 Name Deepak Age 27
+ID 5 Name Naman Age 31
+Company VISA age below 30
+Name Manish
+Name Shreya
+Company VISA sort by id
+ID 1 Name Manish Age 21
+ID 2 Name Shreya Age 23
+ID 3 Name Labdhi Age 31
+ID 4 Name Jain Age 37
+Company VISA sort by name
+ID 4 Name Jain Age 37
+ID 3 Name Labdhi Age 31
+ID 1 Name Manish Age 21
+ID 2 Name Shreya Age 23
+Company VISA sort by Age
+ID 1 Name Manish Age 21
+ID 2 Name Shreya Age 23
+ID 3 Name Labdhi Age 31
+ID 4 Name Jain Age 37
+Company CISCO age below 30
+Company CISCO sort by id
+ID 1 Name Mridul Age 31
+ID 2 Name Rishi Age 33
+ID 3 Name Kapil Age 31
+ID 4 Name Urmi Age 37
+Company CISCO sort by name
+ID 3 Name Kapil Age 31
+ID 1 Name Mridul Age 31
+ID 2 Name Rishi Age 33
+ID 4 Name Urmi Age 37
+Company CISCO sort by Age
+ID 1 Name Mridul Age 31
+ID 2 Name Rishi Age 33
+ID 4 Name Urmi Age 37
+Company Paytm age below 30
+Name Agarwal
+Name Dutta
+Name Shruti
+Name Kirti
+Company Paytm sort by id
+ID 1 Name Agarwal Age 22
+ID 2 Name Dutta Age 23
+ID 3 Name Shruti Age 23
+ID 4 Name Kirti Age 27
+Company Paytm sort by name
+ID 1 Name Agarwal Age 22
+ID 2 Name Dutta Age 23
+ID 4 Name Kirti Age 27
+ID 3 Name Shruti Age 23
+Company Paytm sort by Age
+ID 1 Name Agarwal Age 22
+ID 2 Name Dutta Age 23
+ID 4 Name Kirti Age 27
+Company Google age below 30
+Name Layeeq
+Name Krutika
+Company Google sort by id
+ID 1 Name Layeeq Age 21
+ID 2 Name Krutika Age 23
+ID 3 Name Ahmeed Age 31
+ID 4 Name Shah Age 37
+Company Google sort by name
+ID 3 Name Ahmeed Age 31
+ID 2 Name Krutika Age 23
+ID 1 Name Layeeq Age 21
+ID 4 Name Shah Age 37
+Company Google sort by Age
+ID 1 Name Layeeq Age 21
+ID 2 Name Krutika Age 23
+ID 3 Name Ahmeed Age 31
+ID 4 Name Shah Age 37
+
+CITYWISE COMPANY PRINT
+
+CITY: Bangalore
+Accolite
+VISA
+CISCO
+
+CITY: Mumbai
+Paytm
