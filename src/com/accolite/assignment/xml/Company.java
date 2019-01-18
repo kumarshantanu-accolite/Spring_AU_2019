@@ -5,16 +5,19 @@ import java.util.*;
 public class Company {
 	static ArrayList<Employee> employeeList=new ArrayList<>();
 	public String addEmployee(int id,String name,int age) {
+		for(Employee e:employeeList) {
+			if(e.getId()==id)
+				return "Eneter unique id";
+		}
 		employeeList.add(new Employee(id,name,age));
 		return "New Employee Added";
 	}
 	public String displayAll(){
 		String result="";
 		for(Employee e:employeeList){
-			System.out.println(e);
 		result+="ID: "+e.getId()+" Name:"+e.getName()+" Age:"+e.getAge()+"\n";
 		}
-		System.out.println(result);
+		
 		return result; 
 		}
 
