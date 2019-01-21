@@ -1,0 +1,6 @@
+1. First 5 taxi comes to taxistand
+2.For every Passenger comes it check the taxistand from the first slot to fifth slot
+3. If taxi is empty then empth taxi is assigned with passenger destination.
+4. The taxi capacity of passenger reaches 4 then taxi leaves to destination.
+5. If the all taxi slot does not match with passenger destination then passenger goes to passenger queue.
+6. If the taxi stand is not empty and the taxi arrives it goes to taxi queue. 
