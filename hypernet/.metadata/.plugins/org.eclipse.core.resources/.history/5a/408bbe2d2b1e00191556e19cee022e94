@@ -1,0 +1,118 @@
+package Hypernet.Process;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.criterion.Restrictions;
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    { 
+       // System.out.println( "Hello World!" );
+        List<Employee>employeeList= new ArrayList<Employee>();
+        List<Project>projectList= new ArrayList<Project>();
+        SessionFactory factory = new Configuration().configure().buildSessionFactory();
+        Session session =factory.openSession();
+        session.beginTransaction();
+        Employee e=new Employee();
+       /* e.setEmployeeName("Kumar");
+        e.setEmployeeAge(21);
+        e.setEmployeeName("Shan");
+        e.setEmployeeAge(22);
+        e.setEmployeeName("Layeeq");
+        e.setEmployeeAge(24);
+        e.setEmployeeName("Aman");
+        e.setEmployeeAge(27);*/
+
+        Integer id=(Integer)session.save(e);
+        
+        
+        
+        Criteria cr = session.createCriteria(Employee.class); 
+		 
+		
+       cr.add(Restrictions.eq("employeeId", 2));
+		  employeeList= cr.list();
+		  System.out.println(employeeList.size());
+		  for(Employee st:employeeList)
+		  {
+			  System.out.println(st);
+			  System.out.println(st.getEmployeeId()+" "+st.getEmployeeName()+" "+st.getEmployeeAge());
+		  }
+		  Criteria cd = session.createCriteria(Employee.class); 
+		  cd.add(Restrictions.gt("employeeAge", 22));
+		  employeeList= cd.list();
+		  System.out.println(employeeList.size());
+		  for(Employee st:employeeList)
+		  {
+			  System.out.println(st);
+			  System.out.println(st.getEmployeeId()+" "+st.getEmployeeName()+" "+st.getEmployeeAge());
+		  }
+        
+		  Project p=new Project();
+	       p.setEmployeeId(4);
+	       p.setProjectName("Paytm Project");
+	       session.save(p);
+
+	       
+	       
+	       session.getTransaction().commit();   
+	       
+	        
+	      //  session.getTransaction().commit();
+	      /* Criteria co = session.createCriteria(Project.class); 
+	       co.add(Restrictions.eq("studentId", 72));
+			  courseList= co.list();
+			
+			  for(Course ct:courseList)
+			  {
+				  System.out.println("Course id "+ct.getCourseId()+" Couse name"+ct.getCourseName());
+				 
+			  }
+		  */
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+/* 
+       /
+        /*Course c=new Course();
+       c.setStudentId(72);
+       c.setCourseName("MAthematics");
+       session.save(c);*/
+  /*      Criteria co = session.createCriteria(Course.class); 
+       co.add(Restrictions.eq("studentId", 72));
+		  courseList= co.list();
+		
+		  for(Course ct:courseList)
+		  {
+			  System.out.println("Course id "+ct.getCourseId()+" Couse name"+ct.getCourseName());
+			 
+		  }
+		  for(Student student: studentList) {
+			  System.out.println( student.getStudentName()+"|" 
+			  +student.getStudentAge()+"|"
+			  +student.getStudentId()+"|"
+			  +(!student.getCourses().isEmpty()?student.getCourses().get(0).getCourseName()
+			  :"") ); }
+       
+       session.getTransaction().commit();*/
+        
+        
+        
+        
+        
+    }
+    
+}
