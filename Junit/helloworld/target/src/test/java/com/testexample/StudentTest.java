@@ -5,15 +5,21 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.TreeSet;
 
+import org.junit.After;
 import org.junit.AfterClass;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.mockito.Mockito;
 
+import com.au.assignment.junit.MainFile;
 import com.au.assignment.junit.OutputList;
 import com.au.assignment.junit.Student;
+
+
+
 public class StudentTest {
-@BeforeClass
+	@BeforeClass
 	public static void beforeclass() { 
 		System.out.println("Starting Junit");
 	}
@@ -33,6 +39,16 @@ public class StudentTest {
 		
 		assertEquals(4, stringList.get(1).length);
 		assertEquals("studentCode", stringList.get(0)[0]);
+	}
+	@Before
+	public void testmain() {
+		MainFile a=new MainFile();
+		System.out.println("Begin Main File");
+	}
+	@After
+	public void testoutput() {
+		OutputList a=new OutputList();
+		System.out.println("After");
 	}
 	@AfterClass
 	public static void afterclass() {
