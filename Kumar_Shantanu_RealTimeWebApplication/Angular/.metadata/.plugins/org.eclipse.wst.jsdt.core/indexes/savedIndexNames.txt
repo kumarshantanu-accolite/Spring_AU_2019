@@ -1,0 +1,5 @@
+INDEX VERSION 1.4+C:\Users\Kumar.Shantanu\Angular\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3555083105.index
+2486063753.index
+1105520148.index
+4099843462.index

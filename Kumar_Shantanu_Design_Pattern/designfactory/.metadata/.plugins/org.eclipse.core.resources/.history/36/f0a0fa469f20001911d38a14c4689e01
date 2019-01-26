@@ -1,0 +1,8 @@
+package com.au.assignment.designpattern;
+
+public class Location {
+	public enum Location {
+		  DEFAULT, USA, ASIA
+		}
+
+}

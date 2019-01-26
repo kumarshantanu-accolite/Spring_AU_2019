@@ -1,0 +1,25 @@
+package com.au.aulibrary.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.au.aulibrary.model.Book;
+
+@RestController
+public class BookController {
+
+	@GetMapping("/books")
+	public List<Book> getBooks() {
+		List<Book> books = new ArrayList<>();
+		books.add(new Book(1, "Marvel comics", "StanLee", 400D, "This is my favourite book"));
+		return books;
+	}
+	
+	@GetMapping("/books/{id}")
+	public Book getBook() {
+		return new Book(1, "Marvel comics", "StanLee", 400D, "This is my favourite book");
+	}
+}

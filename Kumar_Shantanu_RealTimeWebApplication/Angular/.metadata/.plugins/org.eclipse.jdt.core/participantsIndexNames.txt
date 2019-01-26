@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\Users\Kumar.Shantanu\Angular\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1105520148.index
+\realtime\src\main\java
+C:\Users\Kumar.Shantanu\Angular\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\772116427.index
+\aulibrary\src\main\java
+C:\Users\Kumar.Shantanu\Angular\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4099843462.index
+\realtime\src\main\resources

@@ -1,0 +1,21 @@
+package com.au.assignment.designpattern;
+
+public class House {
+	public House(HouseType model, Location location){
+	    this.model = model;
+	    this.location = location;
+	  }
+	 
+	  protected abstract void construct();
+	 
+	  private HouseType model = null;
+	  private Location location = null;
+	 
+	  //getters and setters
+	 
+	  @Override
+	  public String toString() {
+	    return "Style- "+model + " built in "+location;
+	  }
+
+}
