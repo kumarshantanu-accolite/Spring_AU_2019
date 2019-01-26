@@ -1,0 +1,11 @@
+Differences between Abstract Factory & Factory design pattern:
+
+Abstract Factory
+1. Abstract factory uses the delegation to decide the instantiation of the object.
+2. Abstract factory is an object.
+3. Abstract factory method hides the construction of a family of related objects.
+
+Factory
+1. Factory method uses the  inheritance to decide which object has to be instantiated.
+2. Factory method is a single method.
+3. Factory method pattern hides the construction of single object.
