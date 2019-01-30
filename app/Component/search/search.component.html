@@ -1,0 +1,24 @@
+<div>
+    <label for="bookId">ID:</label>
+    <input type="number" id="bookId" [(ngModel)]="id" />
+    <button type="button" (click)="showData()">Add Book</button>
+  </div>
+  <p class="sectionheader jumbotron">search works!</p>
+  <span *ngIf="book && book.bookName"> {{ book.bookName }}</span>
+
+
+  <p class="sectionHeader">
+      <span class="books">
+        Search for books!
+      </span>
+    </p>
+    <p>
+    <input type="text" name="bookid" [(ngModel)]="id" placeholder="Mention book id to search" ><br> 
+    <button (click)="searchBook()" class="btn btn-success">Search book</button>
+    </p>
+    <br>
+    <br>
+    
+    <span *ngIf="book && book.bookName">
+        <a [routerLink]="['/book',book.id]" routerLinkActive="active">{{ book.bookName }}</a>
+    </span>
